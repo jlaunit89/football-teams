@@ -21,3 +21,7 @@
 .background-football {
     background-color: #A65161
 }
+
+li:hover {
+    background-color: blue
+}

@@ -14,18 +14,34 @@ var color;
 
 if (response === "Patriots") {
     alertMessage = "You are a winner too!";
-    color = "#00FF00#"
+    
 } else if (response === "patriots") {
     alertMessage = "You are a winner too!";
-    color = "#FF0000";
+    
 } else {
     alertMessage = "BOOOOOOO!!"
-    color = "#FF0000"
+    
 }
 
+let name = prompt("What is your name?");
+"Hello," + name + "!"
+alert("Hello, " + name + "!");
+
 alert(alertMessage);
+
+function winning() {
+    var numberOfWinners = prompt("How many winners you want to see?");
+    for (var i = 0; i < numberOfWinners; i++) {
+        document.write("<img src=\"https://i.imgur.com/A9lTE4M.png\">");
+    }
+}  
+
+winning();
+
 
 var element = document.getElementById('response-output')
 
 element.innerText = alertMessage;
 element.style.color = color;
+
+
